@@ -3,6 +3,8 @@
 The rapid development of Generative AI has introduced numerous new challenges: amplifying biases, erosion of trust, disinformation, lack of accountability, manipulation - to name a few.
 When it comes to speech, the focus is often on unauthorized voice cloning. Today, I want to talk about an often-overlooked aspect: the intersection of social manipulation and generative speech.
 
+In the following, I build an argument that speech-enabled LLM provides considerably higher manipulation risks that the text LLM alone. Firstly, I argue that, unlike text, speech has a direct access to our emotional, irrational brain. Secondly, the progress in the speech technology approaches the state where that can be used. Next, I discuss how combining those can provide a large spectrum of possible manipulations. Finally, I touch on how far we are.
+
 ### Prelim 0 ###
 
 The first point I want to make is that audio differs significantly from text. I believe that audio has a more direct access to our emotional, non-rational brain.
