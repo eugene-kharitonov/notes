@@ -45,28 +45,29 @@ Yet I hope that writing down my thoughts might help to start a discussion?
 ### References ###
 
 
-[1] https://en.wikipedia.org/wiki/Jiahu_symbols
+<a id="reference-1">[1]</a> https://en.wikipedia.org/wiki/Jiahu_symbols
 
-[2] https://pmc.ncbi.nlm.nih.gov/articles/PMC6519373/ --- a random paper on the topic, maybe there are better references!
+<a id="reference-2">[2]</a> https://pmc.ncbi.nlm.nih.gov/articles/PMC6519373/ --- a random paper on the topic, maybe there are better references!
 
-[3] https://www.scientificamerican.com/article/fossils-reveal-when-animals-started-making-noise/
+<a id="reference-3">[3]</a> https://www.scientificamerican.com/article/fossils-reveal-when-animals-started-making-noise/
 
-[4] https://www.sciencedirect.com/science/article/pii/S0960982209018247
+<a id="reference-4">[4]</a> https://www.sciencedirect.com/science/article/pii/S0960982209018247
 
-[5] https://www.sciencedirect.com/science/article/abs/pii/S001002771300228X
+<a id="reference-5">[5]</a> https://www.sciencedirect.com/science/article/abs/pii/S001002771300228X
 
-[6] https://deepmind.google/discover/blog/wavenet-a-generative-model-for-raw-audio/
+<a id="reference-6">[6]</a> https://deepmind.google/discover/blog/wavenet-a-generative-model-for-raw-audio/
 
-[7] https://google-research.github.io/seanet/soundstorm/examples/
+<a id="reference-7">[7]</a> https://google-research.github.io/seanet/soundstorm/examples/
 
-[8] https://www.hume.ai/blog/introducing-evi-3
+<a id="reference-8">[8]</a> https://www.hume.ai/blog/introducing-evi-3
 
-[9] https://elevenlabs.io/voice-library
+<a id="reference-9">[9]</a> https://elevenlabs.io/voice-library
 
-[10] https://google-research.github.io/seanet/speartts/examples/#prompting
+<a id="reference-10">[10]</a> https://google-research.github.io/seanet/speartts/examples/#prompting
 
-[11] https://elevenlabs.io/voice-cloning
+<a id="reference-11">[11]</a> https://elevenlabs.io/voice-cloning
 
-[12] https://www.microsoft.com/en-us/research/project/vall-e-x/
+<a id="reference-12">[12]</a> https://www.microsoft.com/en-us/research/project/vall-e-x/
 
-[13] https://www.quora.com/How-much-did-Google-increase-conversions-after-its-41-shades-of-blue-test/answer/Ronny-Kohavi
+<a id="reference-13">[13]</a> https://www.quora.com/How-much-did-Google-increase-conversions-after-its-41-shades-of-blue-test/answer/Ronny-Kohavi
+
