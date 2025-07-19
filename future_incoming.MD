@@ -29,11 +29,12 @@ There could be different levels of this.
 
 Consider a scenario beginning with a highly empathetic voice answering your call to an airline support line. The voice and what is being said are optimized to reduce the number of refunds. "Yes John, I understand how that makes you feel. We are deeply sorry for the flight being delayed. Would you accept this meal voucher as an apology?" At this stage, it is perhaps not as different as optimizing the shade of the ten blue links to increase the user engagement [[13]](#reference-13).
 
-The next level is still benign. For instance, an AI might detect your Russian accent and male voice, and adapt by deploying a Russian-accented female voice to sell you a year's worth of printing paper. Alternatively, it could switch directly to Russian, listening as you lament the difficulty of acquiring grechka in this country.
+The next level is still simplistic. For instance, an AI might figure out your socio-demographic situation from your accent and voice. Maybe it can figure out which voices you find attractive. Maybe if can figure out your native language and switch to it, building a connection over typical problems of your diaspora. It can use all that to convince you buying a year's worth of printing paper.
 
-With a further optimization steps, the bot on the other end of the line could precisely time pauses and emphasize specific words or phrases, in a ways that are extremely tailored for you --- in order to subtly increase your susceptibility to a scam. Now, extrapolate this to millions of simultaneous sessions, operating 24/7 from a distant data center. Large-scale LLMs deployments weaponized to incrementally affect your purchasing decisions or straight scam you.
 
-Or consider a cold call where the AI attempts to mimic your child's voice, based solely on your 'Hello,' to solicit money.
+With a few more optimization steps, the bot on the other end of the line could precisely time pauses and emphasize specific words or phrases, in a ways that are extremely tailored for you --- in order to subtly increase your susceptibility to a scam. Now, extrapolate this to millions of simultaneous sessions, operating 24/7 from a distant data center. Large-scale LLMs deployments weaponized to incrementally affect your purchasing decisions or straight scam you.
+
+Or consider a cold call where the AI attempts to mimic your child's voice, based solely on your 'Hello,' to solicit money from you. Ok, this one might be hard, but what success rate would make the numbers work, economically? Still might be considerably more profitable than the current scam schemes.
 
 
 ### Are we there yet? ###
@@ -49,7 +50,7 @@ Now I believe the progress is being made and we can see those problems being cra
 
 For instance, the latency limitation is being relaxed due to streaming STT and TTS becoming workable solutions.
 Streaming STT starts feeding tokens into a standard LLM even before the user finishes speaking, allowing the LLM to begin processing immediately and generating a reply the moment it determines the user's turn is complete.
-TTS can start synthesizing when the first token comes out of the LLM. The total latency can drop to as little as 0.5s [14]. As a reference, the recommended round-about latency for VoIP calls is below 0.3s and likely people can easily adjust to 0.5s when chatting over the phone. One can imagine a cascaded system with a lower latency and better prosody if, e.g. TTS is merged on top of the LLM itself.
+TTS can start synthesizing when the first token comes out of the LLM. The total latency can drop to as little as 0.5s [[14]](#reference-14). As a reference, the recommended round-about latency for VoIP calls is below 0.3s and likely people can easily adjust to 0.5s when chatting over the phone. One can imagine a cascaded system with a lower latency and better prosody if, e.g. TTS is merged on top of the LLM itself.
 
 
 All in all, as end-to-end systems become smarter and cheaper, and cascaded systems become more interactive, we can see increasingly more scenarios from the previous Section being unlocked.
