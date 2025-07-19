@@ -17,9 +17,9 @@ Therefore, my hypothesis is that, compared to audio, humans possess a natural de
 
 ### Prelim 1 ###
 
-Another point is that the quality of speech generation systems has rapidly become alarmingly good. Compare the capabilities from nine years ago [[6]](#reference-6) to those of three years ago [[7]](#reference-6), and then to what is available today [[8]](#reference-8), [[9]](#reference-9). These systems now offer very high audio quality, naturally-sounding prosody and emotions, faster-than-real-time generation, and include realistic non-word vocalizations. They can even perform zero-shot voice cloning from just a few seconds of audio [[10]](#reference-10), [[11]](#reference-11), [[12]](#reference-12).
+Another point is that the quality of speech generation systems has rapidly become alarmingly good. Compare the capabilities from nine years ago [[6]](#reference-6) to those of three years ago [[7]](#reference-6), and then to what is available today [[8]](#reference-8), [[9]](#reference-9). These systems now offer very high audio quality, naturally-sounding prosody and emotions, faster-than-real-time generation, and include realistic non-word vocalizations. They can perform zero-shot voice cloning from just a few seconds of audio [[10]](#reference-10), [[11]](#reference-11), [[12]](#reference-12).
 
-It's highly probable that within just a few years, the average person will find it impossible to distinguish synthesized speech from natural human speech. In fact, it's already difficult to distinguish synthetic speech, particularly over phone calls. At the same time, the voices, prosody, paralinguistic features will be easily configurable. 
+It's highly probable that within just a few years, the average person will find it impossible to distinguish synthesized speech from natural human speech. In fact, it's already difficult to distinguish synthetic speech, particularly over phone calls. At the same time, the voices, prosody, paralinguistic features will be easily configurable.
 
 ### Putting it all together ###
 
@@ -36,11 +36,29 @@ With a further optimization steps, the bot on the other end of the line could pr
 Or consider a cold call where the AI attempts to mimic your child's voice, based solely on your 'Hello,' to solicit money.
 
 
-### Is there a way out? ###
+### Are we there yet? ###
 
-Is there a solution to avoid this dystopia? Unfortunately, I believe the answer is no. The underlying technology is already ready; it's only a matter of time before applications and market catch-up. Likely, the market forces are already in motion, building the first stages of this.
+I think we are not there yet, technology-wise. However, we are getting there fast.
 
-Yet I hope that writing down my thoughts might help to start a discussion?
+Direct, end-to-end speech-to-speech models provide good reactivity and high dialog quality. They can back-channel and do all the paralinguistic stuff. However, the small open ones are dumber than their textual counterparts, even those that were textually pretrained. Perhaps this is less of a problem for the large, closed ones, such as Gemini. Fortunately, sustaining an interactive dialogue for 20 minutes requires reserving significant hardware resources for that duration, and these large models demand substantial computational power. Consequently, such a scenario is likely not economically viable with the current generation of large commercial models.
+
+
+In turn, cascaded systems, which sandwich a pure textual LLM with a combination of Speech-to-Text (STT) and Text-to-Speech (TTS) models, are smarter but lack dialog reflexes. They have an intrinsically limited expressiveness because two disjoint systems separately generate and synthesize words. Furthermore, the LLM and TTS communicate solely via text, which offers a quite limited bandwidth for transmitting expression and prosody. A further challenge lies in the latency inherent in cascaded systems, arising from the sequential requirement for one model to transcribe, another to formulate a reply, and a third to synthesize that response.
+
+Now I believe the progress is being made and we can see those problems being cracked before our eyes, one-by-one.
+
+For instance, the latency limitation is being relaxed due to streaming STT and TTS becoming workable solutions.
+Streaming STT starts feeding tokens into a standard LLM even before the user finishes speaking, allowing the LLM to begin processing immediately and generating a reply the moment it determines the user's turn is complete.
+TTS can start synthesizing when the first token comes out of the LLM. The total latency can drop to as little as 0.5s [14]. As a reference, the recommended round-about latency for VoIP calls is below 0.3s and likely people can easily adjust to 0.5s when chatting over the phone. One can imagine a cascaded system with a lower latency and better prosody if, e.g. TTS is merged on top of the LLM itself.
+
+
+All in all, as end-to-end systems become smarter and cheaper, and cascaded systems become more interactive, we can see increasingly more scenarios from the previous Section being unlocked.
+
+
+### What's next? ###
+Is there a solution to avoid this dystopia? Unfortunately, I believe the answer is no. The underlying technology is getting there
+and the market would be happy to capitalize on that. However, I hope that writing down my thoughts might help to start a discussion.
+
 
 ### References ###
 
@@ -71,3 +89,5 @@ Yet I hope that writing down my thoughts might help to start a discussion?
 
 <a id="reference-13">[13]</a> https://www.quora.com/How-much-did-Google-increase-conversions-after-its-41-shades-of-blue-test/answer/Ronny-Kohavi
 
+
+<a id="reference-14">[14]</a> https://github.com/kyutai-labs/unmute
