@@ -40,20 +40,33 @@ Or consider a cold call where the AI attempts to mimic your child's voice, based
 
 Is there a solution to avoid this dystopia? Unfortunately, I believe the answer is no. The underlying technology is already ready; it's only a matter of time before applications and market catch-up. Likely, the market forces are already in motion, building the first stages of this.
 
+Yet I hope that writing down my thoughts might help to start a discussion?
 
 ### References ###
 
 
 [1] https://en.wikipedia.org/wiki/Jiahu_symbols
+
 [2] https://pmc.ncbi.nlm.nih.gov/articles/PMC6519373/ --- a random paper on the topic, maybe there are better references!
+
 [3] https://www.scientificamerican.com/article/fossils-reveal-when-animals-started-making-noise/
+
 [4] https://www.sciencedirect.com/science/article/pii/S0960982209018247
+
 [5] https://www.sciencedirect.com/science/article/abs/pii/S001002771300228X
+
 [6] https://deepmind.google/discover/blog/wavenet-a-generative-model-for-raw-audio/
+
 [7] https://google-research.github.io/seanet/soundstorm/examples/
+
 [8] https://www.hume.ai/blog/introducing-evi-3
+
 [9] https://elevenlabs.io/voice-library
+
 [10] https://google-research.github.io/seanet/speartts/examples/#prompting
+
 [11] https://elevenlabs.io/voice-cloning
+
 [12] https://www.microsoft.com/en-us/research/project/vall-e-x/
+
 [13] https://www.quora.com/How-much-did-Google-increase-conversions-after-its-41-shades-of-blue-test/answer/Ronny-Kohavi
